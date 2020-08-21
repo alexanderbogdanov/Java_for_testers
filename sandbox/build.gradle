@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-mainClassName = "sandbox.HelloWorld"
+mainClassName = "ru.stqa.pft.sandbox.HelloWorld"
 
 group 'org.example'
 version '1.0-SNAPSHOT'
