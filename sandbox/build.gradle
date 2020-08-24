@@ -14,13 +14,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0-M1")
-    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.7.0-M1")
+    implementation 'org.testng:testng:7.1.0'
 }
 
-test {
-    useJUnitPlatform()
-}
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
