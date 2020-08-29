@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="chromedriver fixed">
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="beginning arrangements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +313,7 @@
       <workItem from="1598572376453" duration="4159000" />
       <workItem from="1598619979958" duration="2491000" />
       <workItem from="1598636594211" duration="3536000" />
-      <workItem from="1598712097487" duration="8130000" />
+      <workItem from="1598712097487" duration="8789000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -379,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598718549371</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="beginning arrangements">
+      <created>1598737990268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598737990268</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +412,8 @@
     <MESSAGE value="java.lang.NoSuchMethodError" />
     <MESSAGE value=".idea added to git" />
     <MESSAGE value="chromedriver fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="chromedriver fixed" />
+    <MESSAGE value="beginning arrangements" />
+    <option name="LAST_COMMIT_MESSAGE" value="beginning arrangements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598645724901">
@@ -433,22 +440,22 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1598737617949">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1598737972019">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737617949" />
-    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1598737617949">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1598737972019">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737617949" />
-    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1598737617949">
+    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1598737972019">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737617949" />
-    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1598737617949">
+    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1598737972019">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737617949" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
     <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -469,10 +476,10 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598718554188">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598737994954">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598718554188" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737994954" />
     <state x="690" y="325" key="extract.method.dialog" timestamp="1598574864284">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
