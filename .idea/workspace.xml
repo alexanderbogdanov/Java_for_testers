@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="java.lang.NoSuchMethodError">
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/addressbook-web-tests">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/sandbox">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gKumDYBlq1HOLW5ou0BVcGGiT7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\qa_automation\Java_for_testers" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.addressbook.appmanager" />
+      <recent name="ru.stqa.pft.addressbook" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
+    <configuration name="GroupCreationTests.testGroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.GroupCreationTests.testGroupCreationTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointTests (1)" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.sandbox.PointTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PointTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.sandbox.PointTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SquareTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.sandbox.SquareTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SquareTests.testArea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.sandbox.SquareTests.testArea&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sandbox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupCreationTests" type="TestNG" nameIsGenerated="true">
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.GroupCreationTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PointTests" type="TestNG" nameIsGenerated="true">
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.PointTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTests" type="TestNG" nameIsGenerated="true">
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.SquareTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.PointTests (1)" />
+      <item itemvalue="Gradle.sandbox" />
+      <item itemvalue="Gradle.SquareTests" />
+      <item itemvalue="Gradle.SquareTests.testArea" />
+      <item itemvalue="Gradle.PointTests" />
+      <item itemvalue="Gradle.GroupCreationTests.testGroupCreationTests" />
+      <item itemvalue="TestNG.SquareTests" />
+      <item itemvalue="TestNG.PointTests" />
+      <item itemvalue="TestNG.GroupCreationTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.GroupCreationTests.testGroupCreationTests" />
+        <item itemvalue="Gradle.PointTests" />
+        <item itemvalue="Gradle.SquareTests.testArea" />
+        <item itemvalue="Gradle.SquareTests" />
+        <item itemvalue="Gradle.sandbox" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="" />
+      <created>1597875761248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597875761248</updated>
+      <workItem from="1597875763069" duration="3503000" />
+      <workItem from="1597880472757" duration="3244000" />
+      <workItem from="1598051627432" duration="4009000" />
+      <workItem from="1598216097576" duration="1217000" />
+      <workItem from="1598278812123" duration="584000" />
+      <workItem from="1598279415459" duration="197000" />
+      <workItem from="1598279631647" duration="262000" />
+      <workItem from="1598279915306" duration="787000" />
+      <workItem from="1598280722009" duration="1954000" />
+      <workItem from="1598282700507" duration="11043000" />
+      <workItem from="1598302541778" duration="3540000" />
+      <workItem from="1598390046392" duration="2148000" />
+      <workItem from="1598563409454" duration="373000" />
+      <workItem from="1598563804776" duration="5279000" />
+      <workItem from="1598572376453" duration="4159000" />
+      <workItem from="1598619979958" duration="2491000" />
+      <workItem from="1598636594211" duration="3536000" />
+      <workItem from="1598712097487" duration="2791000" />
+    </task>
+    <task id="LOCAL-00001" summary="Hello world">
+      <created>1597883069541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597883069541</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Hello world">
+      <created>1597883441124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597883441124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Package name changed">
+      <created>1598052846142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598052846142</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Calculation of the distance between two points exercise added.">
+      <created>1598300102219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598300102219</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Point tests added.">
+      <created>1598310653461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598310653461</updated>
+    </task>
+    <task id="LOCAL-00006" summary="unknown error :(">
+      <created>1598637096085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598637096085</updated>
+    </task>
+    <task id="LOCAL-00007" summary="java.lang.NoSuchMethodError">
+      <created>1598712339322</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598712339322</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hello world" />
+    <MESSAGE value="Package name changed" />
+    <MESSAGE value="Calculation of the distance between two points exercise added." />
+    <MESSAGE value="Point tests added." />
+    <MESSAGE value="unknown error :(" />
+    <MESSAGE value="java.lang.NoSuchMethodError" />
+    <option name="LAST_COMMIT_MESSAGE" value="java.lang.NoSuchMethodError" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598645724901">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598645724901" />
+    <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597881152248">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597881152248" />
+    <state x="670" y="230" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1598575992547">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="670" y="230" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598575992547" />
+    <state x="692" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598644790699">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="692" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598644790699" />
+    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1598657264389">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598657264389" />
+    <state x="818" y="495" key="Github.Dialog.Accounts.Choose" timestamp="1597883160736">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
+    <state width="1877" height="498" key="GridCell.Tab.0.bottom" timestamp="1598714760450">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="498" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598714760450" />
+    <state width="1877" height="498" key="GridCell.Tab.0.center" timestamp="1598714760450">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="498" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598714760450" />
+    <state width="1877" height="498" key="GridCell.Tab.0.left" timestamp="1598714760450">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="498" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598714760450" />
+    <state width="1877" height="498" key="GridCell.Tab.0.right" timestamp="1598714760450">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state width="1877" height="498" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598714760450" />
+    <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="718" y="363" key="NewModule_or_Project.wizard/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598657229347" />
+    <state x="636" y="133" width="647" height="937" key="RefactorJ.IntroduceParameterObject" timestamp="1598567376943">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="636" y="133" width="647" height="937" key="RefactorJ.IntroduceParameterObject/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598567376943" />
+    <state x="775" y="519" key="ReplaceDuplicatesPrompt" timestamp="1598574893088">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="775" y="519" key="ReplaceDuplicatesPrompt/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598574893088" />
+    <state x="538" y="319" key="SettingsEditor" timestamp="1598715232191">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598715232191" />
+    <state x="681" y="326" width="540" height="540" key="StructurePopup" timestamp="1598576955386">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598712345049">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598712345049" />
+    <state x="690" y="325" key="extract.method.dialog" timestamp="1598574864284">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="690" y="325" key="extract.method.dialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598574864284" />
+    <state x="342" y="149" key="new project wizard" timestamp="1598657152643">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="342" y="149" key="new project wizard/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598657152643" />
+  </component>
+</project>
