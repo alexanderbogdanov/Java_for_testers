@@ -22,8 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="beginning arrangements">
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="login steps moved to before method">
+      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +315,7 @@
       <workItem from="1598572376453" duration="4159000" />
       <workItem from="1598619979958" duration="2491000" />
       <workItem from="1598636594211" duration="3536000" />
-      <workItem from="1598712097487" duration="8789000" />
+      <workItem from="1598712097487" duration="10264000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -385,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598737990268</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="login steps moved to before method">
+      <created>1598740938910</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598740938910</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +422,8 @@
     <MESSAGE value=".idea added to git" />
     <MESSAGE value="chromedriver fixed" />
     <MESSAGE value="beginning arrangements" />
-    <option name="LAST_COMMIT_MESSAGE" value="beginning arrangements" />
+    <MESSAGE value="login steps moved to before method" />
+    <option name="LAST_COMMIT_MESSAGE" value="login steps moved to before method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598645724901">
@@ -440,34 +450,34 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1598737972019">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1598741472937">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
-    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1598737972019">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1598741472937">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
-    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1598737972019">
+    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1598741472937">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
-    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1598737972019">
+    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1598741472937">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737972019" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
     <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="718" y="363" key="NewModule_or_Project.wizard/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598657229347" />
-    <state x="636" y="133" width="647" height="937" key="RefactorJ.IntroduceParameterObject" timestamp="1598567376943">
+    <state x="1034" y="107" width="647" height="933" key="RefactorJ.IntroduceParameterObject" timestamp="1598742292251">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="636" y="133" width="647" height="937" key="RefactorJ.IntroduceParameterObject/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598567376943" />
-    <state x="775" y="519" key="ReplaceDuplicatesPrompt" timestamp="1598574893088">
+    <state x="1034" y="107" width="647" height="933" key="RefactorJ.IntroduceParameterObject/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598742292251" />
+    <state x="775" y="519" key="ReplaceDuplicatesPrompt" timestamp="1598741680048">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="775" y="519" key="ReplaceDuplicatesPrompt/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598574893088" />
+    <state x="775" y="519" key="ReplaceDuplicatesPrompt/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741680048" />
     <state x="538" y="319" key="SettingsEditor" timestamp="1598715990827">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -476,14 +486,14 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598737994954">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598740945436">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598737994954" />
-    <state x="690" y="325" key="extract.method.dialog" timestamp="1598574864284">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598740945436" />
+    <state x="690" y="325" key="extract.method.dialog" timestamp="1598741663941">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="690" y="325" key="extract.method.dialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598574864284" />
+    <state x="690" y="325" key="extract.method.dialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741663941" />
     <state x="342" y="149" key="new project wizard" timestamp="1598657152643">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
