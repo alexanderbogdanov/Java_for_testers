@@ -22,8 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="login steps moved to before method">
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupData.java" afterDir="false" />
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="refactorin: methods added, GoupData class created">
+      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/ContactCreationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/ContactData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" afterDir="false" />
     </list>
@@ -75,10 +76,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
@@ -86,12 +88,34 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\qa_automation\Java_for_testers" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.addressbook" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.addressbook.appmanager" />
       <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
+    <configuration name="ContactCreationTest.testContactCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.addressbook.ContactCreationTest.testContactCreation&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="GroupCreationTests.testGroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -187,22 +211,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="sandbox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="ContactCreationTests" type="TestNG">
+      <useClassPathOnly />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.ContactCreationTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GroupCreationTests" type="TestNG" nameIsGenerated="true">
       <useClassPathOnly />
@@ -269,22 +297,23 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.PointTests (1)" />
-      <item itemvalue="Gradle.sandbox" />
       <item itemvalue="Gradle.SquareTests" />
       <item itemvalue="Gradle.SquareTests.testArea" />
       <item itemvalue="Gradle.PointTests" />
       <item itemvalue="Gradle.GroupCreationTests.testGroupCreationTests" />
+      <item itemvalue="Gradle.ContactCreationTest.testContactCreation" />
       <item itemvalue="TestNG.SquareTests" />
       <item itemvalue="TestNG.PointTests" />
       <item itemvalue="TestNG.GroupCreationTests" />
+      <item itemvalue="TestNG.ContactCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTest.testContactCreation" />
         <item itemvalue="Gradle.GroupCreationTests.testGroupCreationTests" />
         <item itemvalue="Gradle.PointTests" />
         <item itemvalue="Gradle.SquareTests.testArea" />
         <item itemvalue="Gradle.SquareTests" />
-        <item itemvalue="Gradle.sandbox" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +344,8 @@
       <workItem from="1598572376453" duration="4159000" />
       <workItem from="1598619979958" duration="2491000" />
       <workItem from="1598636594211" duration="3536000" />
-      <workItem from="1598712097487" duration="10264000" />
+      <workItem from="1598712097487" duration="12250000" />
+      <workItem from="1598744324091" duration="1449000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -394,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598740938910</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactorin: methods added, GoupData class created">
+      <created>1598742494901</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598742494901</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,80 +460,101 @@
     <MESSAGE value="chromedriver fixed" />
     <MESSAGE value="beginning arrangements" />
     <MESSAGE value="login steps moved to before method" />
-    <option name="LAST_COMMIT_MESSAGE" value="login steps moved to before method" />
+    <MESSAGE value="refactorin: methods added, GoupData class created" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactorin: methods added, GoupData class created" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598645724901">
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598745520374">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598645724901" />
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745520374" />
     <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597881152248">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597881152248" />
+    <state x="689" y="375" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598743765282">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="689" y="375" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743765282" />
     <state x="670" y="230" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1598575992547">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="670" y="230" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598575992547" />
+    <state x="706" y="440" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598743384765">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="706" y="440" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743384765" />
     <state x="692" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598644790699">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="692" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598644790699" />
-    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1598715946247">
+    <state x="92" y="92" width="1736" height="986" key="DiffContextDialog" timestamp="1598745678071">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598715946247" />
+    <state x="92" y="92" width="1736" height="986" key="DiffContextDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745678071" />
+    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1598745743368">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745743368" />
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose" timestamp="1597883160736">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1598741472937">
+    <state width="1877" height="486" key="GridCell.Tab.0.bottom" timestamp="1598745682266">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
-    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1598741472937">
+    <state width="1877" height="486" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745682266" />
+    <state width="1877" height="486" key="GridCell.Tab.0.center" timestamp="1598745682266">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
-    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1598741472937">
+    <state width="1877" height="486" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745682266" />
+    <state width="1877" height="486" key="GridCell.Tab.0.left" timestamp="1598745682265">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
-    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1598741472937">
+    <state width="1877" height="486" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745682265" />
+    <state width="1877" height="486" key="GridCell.Tab.0.right" timestamp="1598745682266">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741472937" />
+    <state width="1877" height="486" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745682266" />
     <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="718" y="363" key="NewModule_or_Project.wizard/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598657229347" />
-    <state x="1034" y="107" width="647" height="933" key="RefactorJ.IntroduceParameterObject" timestamp="1598742292251">
+    <state x="1034" y="107" width="647" height="923" key="RefactorJ.IntroduceParameterObject" timestamp="1598745401654">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="1034" y="107" width="647" height="933" key="RefactorJ.IntroduceParameterObject/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598742292251" />
+    <state x="1034" y="107" width="647" height="923" key="RefactorJ.IntroduceParameterObject/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745401654" />
     <state x="775" y="519" key="ReplaceDuplicatesPrompt" timestamp="1598741680048">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="775" y="519" key="ReplaceDuplicatesPrompt/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741680048" />
-    <state x="538" y="319" key="SettingsEditor" timestamp="1598715990827">
+    <state x="538" y="319" key="SettingsEditor" timestamp="1598745756578">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598715990827" />
+    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745756578" />
     <state x="681" y="326" width="540" height="540" key="StructurePopup" timestamp="1598576955386">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598740945436">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1598742532952">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598740945436" />
-    <state x="690" y="325" key="extract.method.dialog" timestamp="1598741663941">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598742532952" />
+    <state x="776" y="363" key="chooseDestDirectoryDialog" timestamp="1598743384726">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="690" y="325" key="extract.method.dialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598741663941" />
+    <state x="776" y="363" key="chooseDestDirectoryDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743384726" />
+    <state x="690" y="325" key="extract.method.dialog" timestamp="1598745270632">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="690" y="325" key="extract.method.dialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745270632" />
     <state x="342" y="149" key="new project wizard" timestamp="1598657152643">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="342" y="149" key="new project wizard/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598657152643" />
+    <state x="669" y="322" key="refactoring.ChangeSignatureDialog" timestamp="1598744909288">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="669" y="322" key="refactoring.ChangeSignatureDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598744909288" />
   </component>
 </project>
