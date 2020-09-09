@@ -34,6 +34,19 @@ public class ContactHelper extends HelperBase {
         click(By.name("selected[]"));
     }
 
+    public void initContactModification() {
+        click(By.xpath("//img[@alt='Edit']"));
+    }
+
+
+    public void changeName() {
+        type(By.name("firstname"),"Benedict");
+    }
+
+    public void updateContactInfo() {
+        click(By.xpath("(//input[@name='update'])[2]"));
+    }
+
     public void deleteSelectedContact() {
         click(By.xpath("//input[@value='Delete']"));
     }
