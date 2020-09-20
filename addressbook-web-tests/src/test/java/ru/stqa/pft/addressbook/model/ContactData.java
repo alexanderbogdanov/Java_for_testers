@@ -58,4 +58,4 @@ public class ContactData {
     public String getEmail() {
         return email;
     }
-}
+} // fixme добавить параметров
