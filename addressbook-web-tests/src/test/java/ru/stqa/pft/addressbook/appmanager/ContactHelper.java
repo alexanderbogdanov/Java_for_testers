@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
@@ -14,20 +16,18 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
-    public void fillContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstName());
-        type(By.name("middlename"), contactData.getMiddleName());
-        type(By.name("lastname"), contactData.getSurname());
-        type(By.name("nickname"), contactData.getNickname());
-        type(By.name("title"), contactData.getTitle());
-        type(By.name("company"), contactData.getCompany());
-        type(By.name("address"), contactData.getAddress());
-        type(By.name("home"), contactData.getHomeNumber());
-        type(By.name("email"), contactData.getEmail());
-    }
+        type(By.name("lastname"), contactData.getlastName());
 
+        if (creation) {
+            new Select(wd.findElement(By.name("new_group"))).selectByIndex(1);
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
+    }
     public void submitContactCreation() {
-        click(By.xpath("(//input[@name='submit'])[2]"));
+        click(By.name("submit"));
     }
 
     public void selectContact() {
@@ -35,21 +35,24 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactModification() {
-        click(By.xpath("//img[@alt='Edit']"));
-    }
-
-
-    public void changeName() {
-        type(By.name("firstname"),"Benedict");
+        click(By.cssSelector("img[alt='Edit']"));
     }
 
     public void updateContactInfo() {
-        click(By.xpath("(//input[@name='update'])[2]"));
+        click(By.name("update"));
     }
 
     public void deleteSelectedContact() {
         click(By.xpath("//input[@value='Delete']"));
     }
 
+    public void createContact(ContactData contact) {
+       initContactCreation();
+       fillContactForm(contact, true);
+       submitContactCreation();
+    }
 
+    public boolean isThereAContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
 }

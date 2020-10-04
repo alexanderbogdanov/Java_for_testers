@@ -22,22 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Contact deletion and contact modification tests added">
-      <change afterPath="$PROJECT_DIR$/.idea/Java_for_testers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/AlexanderBogdanovCopyright.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/sandbox.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/IEDriverServer.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Equality.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Equation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/EquationTests.java" afterDir="false" />
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Multibrowser option for running tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/NavigationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +102,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15625" />
+    <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -124,7 +123,7 @@
       <command value="sho" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Equality">
+  <component name="RunManager" selected="TestNG.ContactModificationTests">
     <configuration name="Equality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.Equality" />
       <module name="sandbox.main" />
@@ -342,6 +341,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.shortcuts" />
+      <item itemvalue="Application.Equality" />
       <item itemvalue="TestNG.SquareTests" />
       <item itemvalue="TestNG.EquationTests" />
       <item itemvalue="TestNG.PointTests" />
@@ -351,7 +351,6 @@
       <item itemvalue="TestNG.ContactDeletionTests" />
       <item itemvalue="TestNG.GroupModificationTests" />
       <item itemvalue="TestNG.GroupDeletionTests" />
-      <item itemvalue="Application.Equality" />
     </list>
     <recent_temporary>
       <list>
@@ -397,7 +396,12 @@
       <workItem from="1599910539490" duration="612000" />
       <workItem from="1599953447903" duration="14000" />
       <workItem from="1599995213884" duration="7192000" />
-      <workItem from="1600626410381" duration="5616000" />
+      <workItem from="1600626410381" duration="7276000" />
+      <workItem from="1600714148917" duration="8160000" />
+      <workItem from="1601315272765" duration="3216000" />
+      <workItem from="1601407359024" duration="7773000" />
+      <workItem from="1601733842101" duration="2037000" />
+      <workItem from="1601816469629" duration="3957000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -518,7 +522,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599672248832</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Contact deletion and contact modification tests added">
+      <created>1600633959710</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1600633959710</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Multibrowser option for running tests added">
+      <created>1600634036293</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1600634036293</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,25 +572,29 @@
     <MESSAGE value="Contact Modification Test added" />
     <MESSAGE value="Contact Deletion and Contact Modification Tests added" />
     <MESSAGE value="Contact deletion and contact modification tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact deletion and contact modification tests added" />
+    <MESSAGE value="Multibrowser run option for tests added" />
+    <MESSAGE value="Multibrowser option for running tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multibrowser option for running tests added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="421" key="#Notifications" timestamp="1600020329458">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="847" y="421" key="#Notifications/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600020329458" />
-    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600628330519">
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601407605887">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600628330519" />
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721625333" />
+    <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601407605887" />
     <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597881152248">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597881152248" />
-    <state x="796" y="448" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1599429917983">
+    <state x="796" y="448" key="#com.intellij.ide.actionMacro.EditMacrosDialog" timestamp="1601734279942">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="796" y="448" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599429917983" />
+    <state x="796" y="448" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601734279942" />
     <state x="765" y="301" key="#com.intellij.ide.util.MemberChooser" timestamp="1600626933093">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -585,14 +607,19 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="745" y="195" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599603193340" />
-    <state x="639" y="80" width="711" height="938" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1599512437932">
+    <state x="639" y="80" width="711" height="938" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1601328044370">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="639" y="80" width="711" height="938" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599512437932" />
+    <state x="639" y="80" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601328044370" />
     <state x="706" y="440" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598743384765">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="706" y="440" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743384765" />
+    <state x="725" y="402" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1601409043286">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="725" y="402" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601409043286" />
     <state x="692" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598644790699">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -601,46 +628,55 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="92" y="92" width="1736" height="986" key="DiffContextDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745678071" />
-    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1600632146912">
+    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1601816513400">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600632146912" />
+    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721258832" />
+    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601816513400" />
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose" timestamp="1597883160736">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="360" key="GridCell.Tab.0.bottom" timestamp="1600633902811">
+    <state width="1877" height="360" key="GridCell.Tab.0.bottom" timestamp="1601826492708">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600633902811" />
-    <state width="1877" height="360" key="GridCell.Tab.0.center" timestamp="1600633902811">
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826492708" />
+    <state width="1877" height="360" key="GridCell.Tab.0.center" timestamp="1601826492708">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600633902811" />
-    <state width="1877" height="360" key="GridCell.Tab.0.left" timestamp="1600633902811">
+    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="360" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826492708" />
+    <state width="1877" height="360" key="GridCell.Tab.0.left" timestamp="1601826492708">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600633902811" />
-    <state width="1877" height="360" key="GridCell.Tab.0.right" timestamp="1600633902811">
+    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775289" />
+    <state width="1877" height="360" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826492708" />
+    <state width="1877" height="360" key="GridCell.Tab.0.right" timestamp="1601826492708">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="360" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600633902811" />
-    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1599521685316">
+    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="360" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826492708" />
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1601826291662">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599521685316" />
-    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1599521685316">
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826291662" />
+    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1601826291662">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599521685316" />
-    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1599521685316">
+    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826291662" />
+    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1601826291662">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599521685316" />
-    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1599521685316">
+    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826291662" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1601826291662">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599521685316" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826291662" />
     <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -653,26 +689,28 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="775" y="519" key="ReplaceDuplicatesPrompt/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599512320617" />
-    <state x="538" y="319" key="SettingsEditor" timestamp="1600632150033">
+    <state x="538" y="319" key="SettingsEditor" timestamp="1601824080361">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600632150033" />
+    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721260081" />
+    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601824080361" />
     <state x="681" y="326" width="540" height="540" key="StructurePopup" timestamp="1598576955386">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1599672260250">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1600634047512">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599672260250" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600634047512" />
     <state x="776" y="363" key="chooseDestDirectoryDialog" timestamp="1598743384726">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="776" y="363" key="chooseDestDirectoryDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743384726" />
-    <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1" timestamp="1600633923154">
-      <screen x="-1280" y="77" width="1280" height="994" />
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1601816506346">
+      <screen x="-1680" y="142" width="1680" height="1020" />
     </state>
-    <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600633923154" />
+    <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600720943879" />
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601816506346" />
     <state x="895" y="451" key="extract.method.dialog" timestamp="1599671232362">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -689,9 +727,21 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="616" y="273" width="672" height="677" key="run.anything.popup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600027681674" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1600026330373">
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1601823996134">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600026330373" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601823996134" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
