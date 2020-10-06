@@ -7,6 +7,8 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.net.BindException;
+
 public class ContactHelper extends HelperBase {
 
     public ContactHelper(WebDriver wd) {
@@ -27,8 +29,8 @@ public class ContactHelper extends HelperBase {
         click(By.name("submit"));
     }
 
-    public void selectContact() {
-        click(By.name("selected[]"));
+    public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void initContactModification() {
