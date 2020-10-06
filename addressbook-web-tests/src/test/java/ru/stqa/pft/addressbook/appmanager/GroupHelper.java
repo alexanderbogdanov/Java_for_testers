@@ -13,6 +13,11 @@ public class GroupHelper extends HelperBase {
         super(wd);
     }
 
+    public int chooseRandomGroup(int itemsCount) {
+        Random rand = new Random();
+        return  rand.nextInt(itemsCount - 1 );
+    }
+
 
     public void initGroupCreation() {
         click(By.name("new"));
@@ -32,8 +37,8 @@ public class GroupHelper extends HelperBase {
         click(By.linkText("group page"));
     }
 
-    public void selectGroup() {
-        click(By.name("selected[]"));
+    public void selectGroup(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void deleteSelectedGroup() {
