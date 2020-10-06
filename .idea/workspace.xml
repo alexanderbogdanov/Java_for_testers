@@ -22,13 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Реализованы проверка и обеспечение предусловий в тестах">
-      <change afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Primes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/Collections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/PrimeTests.java" afterDir="false" />
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="select random group">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" afterDir="false" />
     </list>
@@ -76,6 +75,11 @@
         <option value="alexanderbogdanovgit config --global user.name alexanderbogdanovgit config --global user.name alexanderbogdanov &lt;ironweed@list.ru&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gKumDYBlq1HOLW5ou0BVcGGiT7" />
@@ -117,7 +121,7 @@
       <command value="sho" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactDeletionTests">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
     <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.Collections" />
       <module name="sandbox.test" />
@@ -370,6 +374,7 @@
     <list>
       <item itemvalue="Application.shortcuts" />
       <item itemvalue="Application.Equality" />
+      <item itemvalue="Application.Collections" />
       <item itemvalue="TestNG.SquareTests" />
       <item itemvalue="TestNG.PrimeTests" />
       <item itemvalue="TestNG.EquationTests" />
@@ -380,7 +385,6 @@
       <item itemvalue="TestNG.ContactDeletionTests" />
       <item itemvalue="TestNG.GroupModificationTests" />
       <item itemvalue="TestNG.GroupDeletionTests" />
-      <item itemvalue="Application.Collections" />
     </list>
     <recent_temporary>
       <list>
@@ -433,7 +437,8 @@
       <workItem from="1601407359024" duration="7773000" />
       <workItem from="1601733842101" duration="2037000" />
       <workItem from="1601816469629" duration="6136000" />
-      <workItem from="1601831854682" duration="8455000" />
+      <workItem from="1601831854682" duration="10566000" />
+      <workItem from="1602011856745" duration="4178000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -575,7 +580,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601826695166</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Добавлены методы подсчета количества групп и проверка их количества до и после внесения изменений">
+      <created>1601854309435</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1601854309435</updated>
+    </task>
+    <task id="LOCAL-00022" summary="select random group">
+      <created>1602021575716</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602021575716</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +633,9 @@
     <MESSAGE value="Multibrowser run option for tests added" />
     <MESSAGE value="Multibrowser option for running tests added" />
     <MESSAGE value="Реализованы проверка и обеспечение предусловий в тестах" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализованы проверка и обеспечение предусловий в тестах" />
+    <MESSAGE value="Добавлены методы подсчета количества групп и проверка их количества до и после внесения изменений" />
+    <MESSAGE value="select random group" />
+    <option name="LAST_COMMIT_MESSAGE" value="select random group" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="421" key="#Notifications" timestamp="1600020329458">
@@ -669,55 +690,55 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="92" y="92" width="1736" height="986" key="DiffContextDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745678071" />
-    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1601853433043">
+    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1602011888498">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721258832" />
-    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601853433043" />
+    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602011888498" />
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose" timestamp="1597883160736">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="392" key="GridCell.Tab.0.bottom" timestamp="1601854103786">
+    <state width="1877" height="353" key="GridCell.Tab.0.bottom" timestamp="1602023745732">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103786" />
-    <state width="1877" height="392" key="GridCell.Tab.0.center" timestamp="1601854103785">
+    <state width="1877" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023745732" />
+    <state width="1877" height="353" key="GridCell.Tab.0.center" timestamp="1602023745731">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103785" />
-    <state width="1877" height="392" key="GridCell.Tab.0.left" timestamp="1601854103785">
+    <state width="1877" height="353" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023745731" />
+    <state width="1877" height="353" key="GridCell.Tab.0.left" timestamp="1602023745731">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775289" />
-    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103785" />
-    <state width="1877" height="392" key="GridCell.Tab.0.right" timestamp="1601854103785">
+    <state width="1877" height="353" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023745731" />
+    <state width="1877" height="353" key="GridCell.Tab.0.right" timestamp="1602023745731">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103785" />
-    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1601854103786">
+    <state width="1877" height="353" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023745731" />
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1602023682986">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103786" />
-    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1601854103786">
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023682986" />
+    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1602023682985">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103786" />
-    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1601854103786">
+    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023682985" />
+    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1602023682985">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103786" />
-    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1601854103786">
+    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023682985" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1602023682985">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601854103786" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602023682985" />
     <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -730,29 +751,29 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="775" y="519" key="ReplaceDuplicatesPrompt/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599512320617" />
-    <state x="538" y="319" key="SettingsEditor" timestamp="1601853435730">
+    <state x="538" y="319" key="SettingsEditor" timestamp="1602011890504">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721260081" />
-    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601853435730" />
+    <state x="538" y="319" key="SettingsEditor/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602011890504" />
     <state x="681" y="326" width="540" height="540" key="StructurePopup" timestamp="1598576955386">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1601826713248">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1602021581711">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600634047512" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601826713248" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602021581711" />
     <state x="776" y="363" key="chooseDestDirectoryDialog" timestamp="1598743384726">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="776" y="363" key="chooseDestDirectoryDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743384726" />
-    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1601831971027">
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1602011869523">
       <screen x="-1680" y="142" width="1680" height="1020" />
     </state>
     <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600720943879" />
-    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601831971027" />
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602011869523" />
     <state x="895" y="451" key="extract.method.dialog" timestamp="1599671232362">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -774,5 +795,16 @@
     </state>
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600026330373" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601823996134" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
