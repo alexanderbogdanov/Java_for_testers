@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="ContactModificationTests and GroupModificationTests improved">
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="max element in the collection search implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
     </list>
@@ -491,7 +487,7 @@
       <workItem from="1601831854682" duration="10566000" />
       <workItem from="1602011856745" duration="8375000" />
       <workItem from="1602081434805" duration="6106000" />
-      <workItem from="1602164605373" duration="6196000" />
+      <workItem from="1602164605373" duration="8720000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -682,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602193898376</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="max element in the collection search implemented">
+      <created>1602195736819</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1602195736819</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +704,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Calculation of the distance between two points exercise added." />
     <MESSAGE value="Point tests added." />
     <MESSAGE value="unknown error :(" />
     <MESSAGE value="java.lang.NoSuchMethodError" />
@@ -726,7 +728,8 @@
     <MESSAGE value="getGroupList() method implemented" />
     <MESSAGE value="getContactList() method implemented" />
     <MESSAGE value="ContactModificationTests and GroupModificationTests improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="ContactModificationTests and GroupModificationTests improved" />
+    <MESSAGE value="max element in the collection search implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="max element in the collection search implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="421" key="#Notifications" timestamp="1600020329458">
@@ -747,11 +750,11 @@
     </state>
     <state x="796" y="448" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1599429917983" />
     <state x="796" y="448" key="#com.intellij.ide.actionMacro.EditMacrosDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601734279942" />
-    <state x="765" y="301" key="#com.intellij.ide.util.MemberChooser" timestamp="1602192526164">
+    <state x="765" y="301" key="#com.intellij.ide.util.MemberChooser" timestamp="1602195595253">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="765" y="301" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600626933093" />
-    <state x="765" y="301" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602192526164" />
+    <state x="765" y="301" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602195595253" />
     <state x="689" y="375" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601830745235">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -791,46 +794,46 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1602194720720">
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom" timestamp="1602197930641">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602194720720" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1602194720720">
+    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197930641" />
+    <state width="1877" height="392" key="GridCell.Tab.0.center" timestamp="1602197930641">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602194720720" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1602194720719">
+    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197930641" />
+    <state width="1877" height="392" key="GridCell.Tab.0.left" timestamp="1602197930641">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775289" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602194720719" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1602194720720">
+    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197930641" />
+    <state width="1877" height="392" key="GridCell.Tab.0.right" timestamp="1602197930641">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602194720720" />
-    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1602193572717">
+    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197930641" />
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1602197937416">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602193572717" />
-    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1602193572717">
+    <state width="1877" height="392" key="GridCell.Tab.1.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197937416" />
+    <state width="1877" height="392" key="GridCell.Tab.1.center" timestamp="1602197937416">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602193572717" />
-    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1602193572716">
+    <state width="1877" height="392" key="GridCell.Tab.1.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197937416" />
+    <state width="1877" height="392" key="GridCell.Tab.1.left" timestamp="1602197937416">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602193572716" />
-    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1602193572717">
+    <state width="1877" height="392" key="GridCell.Tab.1.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197937416" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right" timestamp="1602197937416">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602193572717" />
+    <state width="1877" height="392" key="GridCell.Tab.1.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197937416" />
     <state x="718" y="363" key="NewModule_or_Project.wizard" timestamp="1598657229347">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -852,20 +855,20 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1602193905558">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1602195739519">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600634047512" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602193905558" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602195739519" />
     <state x="776" y="363" key="chooseDestDirectoryDialog" timestamp="1598743384726">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="776" y="363" key="chooseDestDirectoryDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598743384726" />
-    <state x="-1555" y="222" width="1094" height="1220" key="dock-window-1" timestamp="1602194500935">
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1602197030294">
       <screen x="-1680" y="142" width="1680" height="1020" />
     </state>
     <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600720943879" />
-    <state x="-1555" y="222" width="1094" height="1220" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602194500935" />
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602197030294" />
     <state x="895" y="451" key="extract.method.dialog" timestamp="1599671232362">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -887,5 +890,16 @@
     </state>
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600026330373" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1601823996134" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
