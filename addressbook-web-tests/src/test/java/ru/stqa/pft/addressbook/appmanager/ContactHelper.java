@@ -32,6 +32,9 @@ public class ContactHelper extends HelperBase {
         wd.findElements(By.name("selected[]")).get(index).click();
     }
 
+    public void returnToHomePage() {
+        click(By.linkText("home page"));
+    }
     public void initContactModification() {
         click(By.cssSelector("img[alt='Edit']"));
     }
@@ -48,7 +51,7 @@ public class ContactHelper extends HelperBase {
        initContactCreation();
        fillContactForm(contact);
        submitContactCreation();
-
+       returnToHomePage();
     }
 
     public boolean isThereAContact() {
@@ -67,7 +70,7 @@ public class ContactHelper extends HelperBase {
             String lastName = td.get(1).getText();
             String firstName = td.get(2).getText();
             WebElement value = td.get(0);
-            String id = value.findElement(By.tagName("input")).getAttribute("value");
+            int id = Integer.parseInt(value.findElement(By.tagName("input")).getAttribute("value"));
 //            ContactData contact = new ContactData(id, firstName.getText(), lastName.getText(), null);
             ContactData contact = new ContactData(id, firstName, lastName, null);
             contacts.add(contact);
