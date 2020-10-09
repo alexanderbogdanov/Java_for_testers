@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ContactDeletionTests extends TestBase {
 
-  @Test
+  @Test(enabled = false)
   public void testContactDeletion() throws Exception {
     if(! app.getContactHelper().isThereAContact()){
       app.getContactHelper().createContact(new ContactData("Alex", "Bogdanov", "text1"));
@@ -31,6 +31,5 @@ public class ContactDeletionTests extends TestBase {
     after.sort(byId);
     Assert.assertEquals(before, after);
 
-    app.getSessionHelper().logout();
   }
 }

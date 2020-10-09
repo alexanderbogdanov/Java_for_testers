@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void testContactCreation() {
         List<ContactData> before = app.getContactHelper().getContactList();
         ContactData contact = new ContactData("Alex", "Bogdanov", "text1");
@@ -29,7 +29,6 @@ public class ContactCreationTests extends TestBase {
         after.sort(byId);
         Assert.assertEquals(before, after);
 
-        app.getSessionHelper().logout();
     }
 }
 

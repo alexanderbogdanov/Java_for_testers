@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ContactModificationTests extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void testContactModification() throws Exception {
         if(! app.getContactHelper().isThereAContact()){
             app.getContactHelper().createContact(new ContactData("Alex", "Bogdanov", "text1"));
@@ -32,7 +32,6 @@ public class ContactModificationTests extends TestBase {
         before.sort(byId);
         after.sort(byId);
         Assert.assertEquals(before, after);
-        app.getSessionHelper().logout();
     }
 }
 
