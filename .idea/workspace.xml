@@ -22,16 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Lambda expressions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="sorting collections implemented">
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupDeletionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -492,7 +485,7 @@
       <workItem from="1601831854682" duration="10566000" />
       <workItem from="1602011856745" duration="8375000" />
       <workItem from="1602081434805" duration="6106000" />
-      <workItem from="1602164605373" duration="12137000" />
+      <workItem from="1602164605373" duration="12445000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -697,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602198243245</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="sorting collections implemented">
+      <created>1602201541835</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1602201541835</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -716,7 +716,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="unknown error :(" />
     <MESSAGE value="java.lang.NoSuchMethodError" />
     <MESSAGE value=".idea added to git" />
     <MESSAGE value="chromedriver fixed" />
@@ -741,7 +740,8 @@
     <MESSAGE value="ContactModificationTests and GroupModificationTests improved" />
     <MESSAGE value="max element in the collection search implemented" />
     <MESSAGE value="Lambda expressions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lambda expressions" />
+    <MESSAGE value="sorting collections implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting collections implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="421" key="#Notifications" timestamp="1600020329458">
@@ -806,26 +806,26 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1602201279114">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1602201780715">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201279114" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1602201279113">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201780715" />
+    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1602201780715">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201279113" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1602201279113">
+    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201780715" />
+    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1602201780715">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775289" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201279113" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1602201279114">
+    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201780715" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1602201780715">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201279114" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201780715" />
     <state width="1877" height="392" key="GridCell.Tab.1.bottom" timestamp="1602200965920">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -867,11 +867,11 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1602198249591">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1602201545093">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600634047512" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602198249591" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602201545093" />
     <state x="776" y="363" key="chooseDestDirectoryDialog" timestamp="1598743384726">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
