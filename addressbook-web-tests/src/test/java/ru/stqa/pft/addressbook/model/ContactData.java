@@ -1,13 +1,16 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.github.javafaker.Faker;
+
 import java.util.Objects;
 
 public class ContactData {
+    public static Faker faker = new Faker();
+
     private int id;
     private final String firstName;
     private final String lastName;
     private final String group;
-
 
     public ContactData(String firstName, String lastName, String group) {
         this.id = Integer.MAX_VALUE;

@@ -35,8 +35,8 @@ public class ContactHelper extends HelperBase {
     public void returnToHomePage() {
         click(By.linkText("home page"));
     }
-    public void initContactModification() {
-        click(By.cssSelector("img[alt='Edit']"));
+    public void initContactModification(int index) {
+        wd.findElements(By.cssSelector("img[alt='Edit']")).get(index).click();
     }
 
     public void updateContactInfo() {
@@ -54,8 +54,8 @@ public class ContactHelper extends HelperBase {
        returnToHomePage();
     }
     public void modifyContact(int index, ContactData contact) {
-       selectContact(index);
-       initContactModification();
+//       selectContact(index);
+       initContactModification(index);
        fillContactForm(contact);
        updateContactInfo();
        returnToHomePage();

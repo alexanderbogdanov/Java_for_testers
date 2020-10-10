@@ -11,17 +11,13 @@ import java.util.List;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void testContactCreation() {
         List<ContactData> before = app.getContactHelper().getContactList();
-        ContactData contact = new ContactData("Alex", "Bogdanov", "text1");
+        ContactData contact = new ContactData(ContactData.faker.name().firstName(), ContactData.faker.name().firstName(), "text1");
         app.getContactHelper().createContact(contact);
-//        app.getContactHelper().fillContactForm(contact);
-//        app.getContactHelper().submitContactCreation();
-//        app.getNavigationHelper().goToHomePage();
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(after.size(), before.size() + 1);
-
         contact.setId(after.stream().max(Comparator.comparingInt(ContactData::getId)).get().getId());
         before.add(contact);
         Comparator<? super ContactData> byId = (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
