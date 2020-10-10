@@ -6,27 +6,32 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class ContactModificationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        if(! app.getContactHelper().isThereAContact()){
-            app.getContactHelper().createContact(new ContactData(ContactData.faker.name().firstName(), ContactData.faker.name().firstName(), "text1"));
+        if (app.contact().list().size() == 0) {
+            app.contact().create(new ContactData()
+                    .withFirstName(ContactData.faker.name().firstName())
+                    .withLastName(ContactData.faker.name().lastName())
+                    .withGroup("text1"));
         }
     }
 
     @Test(enabled = true)
     public void testContactModification() throws Exception {
 
-        app.getNavigationHelper().goToHomePage(); // ?
-        List<ContactData> before = app.getContactHelper().getContactList();
+        app.goTo().homePage(); // ?
+        List<ContactData> before = app.contact().list();
         int index = before.size() - 1;
-        ContactData contact = new ContactData(before.get(index).getId(),ContactData.faker.name().firstName(), ContactData.faker.name().firstName(),  null);
-        app.getContactHelper().modifyContact(index, contact);
-        List<ContactData> after = app.getContactHelper().getContactList();
+        ContactData contact = new ContactData()
+                .withId(before.get(index).getId())
+                .withFirstName(ContactData.faker.name().firstName())
+                .withLastName(ContactData.faker.name().lastName());
+        app.contact().modify(index, contact);
+        List<ContactData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size());
 
         before.remove(index);

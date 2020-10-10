@@ -33,7 +33,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void returnToHomePage() {
-        click(By.linkText("home page"));
+        click(By.linkText("home"));
     }
     public void initContactModification(int index) {
         wd.findElements(By.cssSelector("img[alt='Edit']")).get(index).click();
@@ -47,18 +47,25 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//input[@value='Delete']"));
     }
 
-    public void createContact(ContactData contact) {
+    public void create(ContactData contact) {
        initContactCreation();
        fillContactForm(contact);
        submitContactCreation();
        returnToHomePage();
     }
-    public void modifyContact(int index, ContactData contact) {
+    public void modify(int index, ContactData contact) {
 //       selectContact(index);
        initContactModification(index);
        fillContactForm(contact);
        updateContactInfo();
        returnToHomePage();
+    }
+
+    public void delete(int index) {
+        selectContact(index);
+        deleteSelectedContact();
+        closeAlert();
+        returnToHomePage();
     }
 
     public boolean isThereAContact() {
@@ -69,7 +76,7 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<ContactData> getContactList() {
+    public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
@@ -79,8 +86,10 @@ public class ContactHelper extends HelperBase {
             WebElement value = td.get(0);
             int id = Integer.parseInt(value.findElement(By.tagName("input")).getAttribute("value"));
 //            ContactData contact = new ContactData(id, firstName.getText(), lastName.getText(), null);
-            ContactData contact = new ContactData(id, firstName, lastName, null);
-            contacts.add(contact);
+            contacts.add(new ContactData()
+            .withId(id)
+            .withFirstName(firstName)
+            .withLastName(lastName));
         }
         return contacts;
     }
