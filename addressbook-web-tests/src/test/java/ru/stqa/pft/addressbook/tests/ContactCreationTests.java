@@ -13,8 +13,11 @@ public class ContactCreationTests extends TestBase {
     public void testContactCreation() {
         List<ContactData> before = app.contact().list();
         ContactData contact = new ContactData()
-                .withFirstName(ContactData.faker.name().firstName())
                 .withLastName(ContactData.faker.name().lastName())
+                .withFirstName(ContactData.faker.name().firstName())
+                .withStreetAddress(ContactData.faker.address().streetAddress())
+                .withEmailAddress(ContactData.faker.internet().emailAddress())
+                .withPhoneNumber(ContactData.faker.number().digits(11))
                 .withGroup("text1");
         app.contact().create(contact);
         List<ContactData> after = app.contact().list();

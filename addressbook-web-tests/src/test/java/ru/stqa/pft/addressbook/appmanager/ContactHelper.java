@@ -20,8 +20,11 @@ public class ContactHelper extends HelperBase {
 
     public void fillContactForm(ContactData contactData) {
 
-        type(By.name("firstname"), contactData.getFirstName());
         type(By.name("lastname"), contactData.getLastName());
+        type(By.name("firstname"), contactData.getFirstName());
+        type(By.name("address"), contactData.getStreetAddress());
+        type(By.name("email"), contactData.getEmailAddress());
+        type(By.name("home"), contactData.getPhoneNumber());
         }
 
     public void submitContactCreation() {
@@ -81,15 +84,21 @@ public class ContactHelper extends HelperBase {
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             List<WebElement> td = element.findElements(By.cssSelector("td"));
+            WebElement value = td.get(0);
             String lastName = td.get(1).getText();
             String firstName = td.get(2).getText();
-            WebElement value = td.get(0);
+            String streetAddress = td.get(3).getText();
+            String emailAddress = td.get(4).getText();
+            String phoneNumber = td.get(5).getText();
             int id = Integer.parseInt(value.findElement(By.tagName("input")).getAttribute("value"));
 //            ContactData contact = new ContactData(id, firstName.getText(), lastName.getText(), null);
             contacts.add(new ContactData()
-            .withId(id)
-            .withFirstName(firstName)
-            .withLastName(lastName));
+                    .withId(id)
+                    .withLastName(lastName)
+                    .withFirstName(firstName)
+                    .withStreetAddress(streetAddress)
+                    .withEmailAddress(emailAddress)
+                    .withPhoneNumber(phoneNumber));
         }
         return contacts;
     }
