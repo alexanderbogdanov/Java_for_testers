@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -35,11 +37,16 @@ public class ContactHelper extends HelperBase {
         wd.findElements(By.name("selected[]")).get(index).click();
     }
 
+    public void selectContactById(int id) {
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+    }
+
     public void returnToHomePage() {
         click(By.linkText("home"));
     }
-    public void initContactModification(int index) {
-        wd.findElements(By.cssSelector("img[alt='Edit']")).get(index).click();
+
+    public void initContactModification(int id) {
+        wd.findElement(By.xpath("//a[contains(@href, 'edit.php?id=" + id + "')]")).click();
     }
 
     public void updateContactInfo() {
@@ -56,9 +63,8 @@ public class ContactHelper extends HelperBase {
        submitContactCreation();
        returnToHomePage();
     }
-    public void modify(int index, ContactData contact) {
-//       selectContact(index);
-       initContactModification(index);
+    public void modify(ContactData contact) {
+       initContactModification(contact.getId());
        fillContactForm(contact);
        updateContactInfo();
        returnToHomePage();
@@ -70,6 +76,14 @@ public class ContactHelper extends HelperBase {
         closeAlert();
         returnToHomePage();
     }
+
+    public void delete(ContactData contact) {
+        selectContactById(contact.getId());
+        deleteSelectedContact();
+        closeAlert();
+        returnToHomePage();
+    }
+
 
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
@@ -102,4 +116,30 @@ public class ContactHelper extends HelperBase {
         }
         return contacts;
     }
+
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<>();
+        List<WebElement> elements = wd.findElements(By.name("entry"));
+        for (WebElement element : elements) {
+            List<WebElement> td = element.findElements(By.cssSelector("td"));
+            WebElement value = td.get(0);
+            String lastName = td.get(1).getText();
+            String firstName = td.get(2).getText();
+            String streetAddress = td.get(3).getText();
+            String emailAddress = td.get(4).getText();
+            String phoneNumber = td.get(5).getText();
+            int id = Integer.parseInt(value.findElement(By.tagName("input")).getAttribute("value"));
+//            ContactData contact = new ContactData(id, firstName.getText(), lastName.getText(), null);
+            contacts.add(new ContactData()
+                    .withId(id)
+                    .withLastName(lastName)
+                    .withFirstName(firstName)
+                    .withStreetAddress(streetAddress)
+                    .withEmailAddress(emailAddress)
+                    .withPhoneNumber(phoneNumber));
+        }
+        return contacts;
+    }
+
+
 }

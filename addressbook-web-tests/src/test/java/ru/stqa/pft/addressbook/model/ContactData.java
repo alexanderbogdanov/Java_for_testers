@@ -94,16 +94,17 @@ public class ContactData {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ContactData contactData = (ContactData) o;
-        return Objects.equals(lastName, contactData.lastName) &&
-                Objects.equals(firstName, contactData.firstName) &&
-                Objects.equals(streetAddress, contactData.streetAddress) &&
-                Objects.equals(emailAddress, contactData.emailAddress) &&
-                Objects.equals(phoneNumber, contactData.phoneNumber);
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(streetAddress, that.streetAddress) &&
+                Objects.equals(emailAddress, that.emailAddress) &&
+                Objects.equals(phoneNumber, that.phoneNumber);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, lastName, streetAddress, emailAddress, phoneNumber);
+        return Objects.hash(id, firstName, lastName, streetAddress, emailAddress, phoneNumber);
     }
 } // fixme добавить параметров
