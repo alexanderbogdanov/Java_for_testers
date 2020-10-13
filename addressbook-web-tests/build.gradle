@@ -10,11 +10,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.testng:testng:7.0.0'
-    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+//    implementation 'org.testng:testng:7.0.0'
+    implementation 'org.testng:testng:7.1.0'
+//    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'com.deque.html.axe-core:selenium:4.0.0'
 //    implementation("com.google.guava:guava:29.0-jre")
     implementation 'com.github.javafaker:javafaker:1.0.2'
-
+    implementation 'org.hamcrest:hamcrest:2.2'
 }
 
 test {
