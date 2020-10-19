@@ -1,14 +1,9 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
-
-import java.util.Set;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -23,8 +18,12 @@ public class ContactModificationTests extends TestBase {
                     .withLastName(ContactData.faker.name().lastName())
                     .withFirstName(ContactData.faker.name().firstName())
                     .withStreetAddress(ContactData.faker.address().streetAddress())
-                    .withEmailAddress(ContactData.faker.internet().emailAddress())
-                    .withPhoneNumber(ContactData.faker.number().digits(11))
+                    .withEmail(ContactData.faker.internet().emailAddress())
+                    .withEmail2(ContactData.faker.internet().emailAddress())
+                    .withEmail3(ContactData.faker.internet().emailAddress())
+                    .withHomePhoneNumber(ContactData.faker.number().digits(7))
+                    .withMobilePhoneNumber(ContactData.faker.number().digits(11))
+                    .withWorkPhoneNumber(ContactData.faker.number().digits(7))
                     .withGroup("text1"));
         }
     }
@@ -40,12 +39,18 @@ public class ContactModificationTests extends TestBase {
                 .withLastName(ContactData.faker.name().lastName())
                 .withFirstName(ContactData.faker.name().firstName())
                 .withStreetAddress(ContactData.faker.address().streetAddress())
-                .withEmailAddress(ContactData.faker.internet().emailAddress())
-                .withPhoneNumber(ContactData.faker.number().digits(11));
+                .withEmail(ContactData.faker.internet().emailAddress())
+                .withEmail2(ContactData.faker.internet().emailAddress())
+                .withEmail3(ContactData.faker.internet().emailAddress())
+                .withHomePhoneNumber(ContactData.faker.number().digits(7))
+                .withMobilePhoneNumber(ContactData.faker.number().digits(11))
+                .withWorkPhoneNumber(ContactData.faker.number().digits(7))
+                .withGroup("text1");
         app.contact().modify(contact);
+        assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.contact().all();
-        assertEquals(after.size(), (before.size()));
-        assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
+        assertThat(after, equalTo(
+                before.without(modifiedContact).withAdded(contact)));
 
     }
 }
