@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.model;
 
 import com.github.javafaker.Faker;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -20,6 +21,10 @@ public class ContactData {
 
     private String allPhones;
     private String allEmails;
+
+
+
+    private File photo;
 
     private String group;
 
@@ -90,6 +95,11 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
     public String getLastName() {
         return lastName;
     }
@@ -113,6 +123,7 @@ public class ContactData {
     public String getAllPhones() { return allPhones; }
     public String getGroup() {return group;}
     public int getId() { return id; }
+    public File getPhoto() { return photo; }
 
     @Override
     public String toString() {

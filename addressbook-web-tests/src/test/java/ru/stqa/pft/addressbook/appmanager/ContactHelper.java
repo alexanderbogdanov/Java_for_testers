@@ -31,7 +31,8 @@ public class ContactHelper extends HelperBase {
         type(By.name("home"), contactData.getHomePhoneNumber());
         type(By.name("mobile"), contactData.getMobilePhoneNumber());
         type(By.name("work"), contactData.getWorkPhoneNumber());
-        }
+        attach(By.name("photo"), contactData.getPhoto());
+    }
 
     public void submitContactCreation() {
         click(By.name("submit"));
