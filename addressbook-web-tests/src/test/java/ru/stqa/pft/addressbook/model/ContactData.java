@@ -1,29 +1,43 @@
 package ru.stqa.pft.addressbook.model;
 
 import com.github.javafaker.Faker;
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
 import java.io.File;
 import java.util.Objects;
 
+@XStreamAlias("contact")
 public class ContactData {
     public static Faker faker = new Faker();
 
+    @XStreamOmitField
     private int id = Integer.MAX_VALUE;
+    @Expose
     private String firstName;
+    @Expose
     private String lastName;
+    @Expose
     private String streetAddress;
+    @Expose
     private String homePhoneNumber;
+    @Expose
     private String mobilePhoneNumber;
+    @Expose
     private String workPhoneNumber;
+    @Expose
     private String email;
+    @Expose
     private String email2;
+    @Expose
     private String email3;
 
     private String allPhones;
     private String allEmails;
 
 
-
+    @Expose
     private File photo;
 
     private String group;

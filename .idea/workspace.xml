@@ -22,12 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Reading from xml file with XStream">
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="version with faker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,22 @@
       <command value="sho" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
+    <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
+      <module name="addressbook-web-tests.test" />
+      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/contacts.json -d json" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.generators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -131,6 +145,32 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactCreationTests" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,85 +187,6 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupCreationTests" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupCreationTests.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupCreationTests" />
-      <option name="METHOD_NAME" value="testGroupCreation" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupDeletionTests" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupModificationTests" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -258,20 +219,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="[Local] ContactCreationTests.testContactCreation" type="aws.lambda" factoryName="Local" temporary="true" nameIsGenerated="true">
+      <option name="credentialProviderId" />
+      <option name="regionId" value="us-east-1" />
+      <option name="debugHost" value="localhost" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" value="ru.stqa.pft.addressbook.tests.ContactCreationTests::testContactCreation" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="runtime" value="java8" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
+      <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="TestNG.GroupCreationTests" />
-      <item itemvalue="TestNG.GroupModificationTests" />
-      <item itemvalue="TestNG.GroupDeletionTests" />
-      <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
+      <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="AWS Lambda.[Local] ContactCreationTests.testContactCreation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="Application.ContactDataGenerator" />
+        <item itemvalue="AWS Lambda.[Local] ContactCreationTests.testContactCreation" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Application.GroupDataGenerator" />
-        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="TestNG.GroupDeletionTests" />
-        <item itemvalue="TestNG.GroupModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +321,7 @@
       <workItem from="1603062627701" duration="182000" />
       <workItem from="1603109405906" duration="8507000" />
       <workItem from="1603130813794" duration="11852000" />
-      <workItem from="1603193618468" duration="1059000" />
+      <workItem from="1603193618468" duration="16211000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -631,7 +617,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603155836657</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Reading from json implemented">
+      <created>1603194921672</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194921672</updated>
+    </task>
+    <task id="LOCAL-00044" summary="version with faker">
+      <created>1603196810153</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1603196810153</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,8 +650,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Multibrowser run option for tests added" />
-    <MESSAGE value="Multibrowser option for running tests added" />
     <MESSAGE value="Реализованы проверка и обеспечение предусловий в тестах" />
     <MESSAGE value="Добавлены методы подсчета количества групп и проверка их количества до и после внесения изменений" />
     <MESSAGE value="select random group" />
@@ -675,18 +673,24 @@
     <MESSAGE value="Fluent style with hamcrest assertions implemented" />
     <MESSAGE value="Contacts information tests added" />
     <MESSAGE value="Reading from xml file with XStream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reading from xml file with XStream" />
+    <MESSAGE value="Reading from json implemented" />
+    <MESSAGE value="version with faker" />
+    <option name="LAST_COMMIT_MESSAGE" value="version with faker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="421" key="#Notifications" timestamp="1600020329458">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="847" y="421" key="#Notifications/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600020329458" />
-    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603194065118">
+    <state x="603" y="203" key="#[Local]_ContactCreationTests.testContactCreation" timestamp="1603216174560">
+      <screen x="0" y="0" width="1920" height="1170" />
+    </state>
+    <state x="603" y="203" key="#[Local]_ContactCreationTests.testContactCreation/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216174560" />
+    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603216975631">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721625333" />
-    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194065118" />
+    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216975631" />
     <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597881152248">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -735,40 +739,40 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="692" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598644790699" />
-    <state x="58" y="124" width="1736" height="830" key="DiffContextDialog" timestamp="1603112179755">
+    <state x="58" y="124" width="1736" height="830" key="DiffContextDialog" timestamp="1603215664623">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="92" y="92" width="1736" height="986" key="DiffContextDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598745678071" />
-    <state x="58" y="124" width="1736" height="830" key="DiffContextDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603112179755" />
-    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1603132529769">
+    <state x="58" y="124" width="1736" height="830" key="DiffContextDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603215664623" />
+    <state x="838" y="438" key="FileChooserDialogImpl" timestamp="1603198995907">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721258832" />
-    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603132529769" />
+    <state x="838" y="438" key="FileChooserDialogImpl/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603198995907" />
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose" timestamp="1597883160736">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1603194334473">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1603216534304">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1603194334473">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216534304" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1603216534304">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1603194334473">
+    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216534304" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1603216534304">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775289" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1603194334473">
+    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216534304" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1603216534304">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216534304" />
     <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1603062598256">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -814,11 +818,11 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1603155850458">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1603196824165">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600634047512" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603155850458" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603196824165" />
     <state x="681" y="237" key="VcsDiffUtil.ChangesDialog" timestamp="1602621766137">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -835,11 +839,11 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="545" y="188" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602544134396" />
-    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1603193818246">
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1603216977321">
       <screen x="-1680" y="142" width="1680" height="1020" />
     </state>
     <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600720943879" />
-    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603193818246" />
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603216977321" />
     <state x="895" y="451" key="extract.method.dialog" timestamp="1602359970828">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -863,17 +867,6 @@
     </state>
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600026330373" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602969819555" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="regexState">
     <option name="map">
