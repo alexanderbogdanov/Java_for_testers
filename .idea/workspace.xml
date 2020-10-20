@@ -22,15 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Contacts information tests added">
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
+    <list default="true" id="691c4e91-075f-4f37-844b-f8f90fdbad29" name="Default Changelist" comment="Reading from xml file with XStream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,11 +119,11 @@
       <command value="sho" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests.testGroupCreation">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/groups.xml -d xml" />
+      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/groups.json -d json" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -271,9 +267,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Application.GroupDataGenerator" />
+        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
         <item itemvalue="TestNG.GroupDeletionTests" />
         <item itemvalue="TestNG.GroupModificationTests" />
       </list>
@@ -338,7 +334,8 @@
       <workItem from="1603035130651" duration="11336000" />
       <workItem from="1603062627701" duration="182000" />
       <workItem from="1603109405906" duration="8507000" />
-      <workItem from="1603130813794" duration="11559000" />
+      <workItem from="1603130813794" duration="11852000" />
+      <workItem from="1603193618468" duration="1059000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1597883069541</created>
@@ -627,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603124757992</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Reading from xml file with XStream">
+      <created>1603155836657</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1603155836657</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +650,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Contact deletion and contact modification tests added" />
     <MESSAGE value="Multibrowser run option for tests added" />
     <MESSAGE value="Multibrowser option for running tests added" />
     <MESSAGE value="Реализованы проверка и обеспечение предусловий в тестах" />
@@ -671,18 +674,19 @@
     <MESSAGE value="contact modification test fixed" />
     <MESSAGE value="Fluent style with hamcrest assertions implemented" />
     <MESSAGE value="Contacts information tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contacts information tests added" />
+    <MESSAGE value="Reading from xml file with XStream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reading from xml file with XStream" />
   </component>
   <component name="WindowStateProjectService">
     <state x="847" y="421" key="#Notifications" timestamp="1600020329458">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="847" y="421" key="#Notifications/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600020329458" />
-    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603154544197">
+    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603194065118">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="414" y="240" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600721625333" />
-    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603154544197" />
+    <state x="375" y="368" width="1092" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194065118" />
     <state x="715" y="375" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597881152248">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -745,26 +749,26 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="818" y="495" key="Github.Dialog.Accounts.Choose/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1597883160736" />
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1603155342298">
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1603194334473">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603155342298" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1603155342298">
+    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
+    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1603194334473">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603155342298" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1603155342297">
+    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
+    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1603194334473">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775289" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603155342297" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1603155342298">
+    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1603194334473">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600728775290" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603155342298" />
+    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603194334473" />
     <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1603062598256">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -810,11 +814,11 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="681" y="326" width="540" height="540" key="StructurePopup/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1598576955386" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1603124762739">
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2" timestamp="1603155850458">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600634047512" />
-    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603124762739" />
+    <state x="552" y="314" key="Vcs.Push.Dialog.v2/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603155850458" />
     <state x="681" y="237" key="VcsDiffUtil.ChangesDialog" timestamp="1602621766137">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
@@ -831,11 +835,11 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="545" y="188" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1602544134396" />
-    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1603131135177">
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1" timestamp="1603193818246">
       <screen x="-1680" y="142" width="1680" height="1020" />
     </state>
     <state x="-1090" y="77" width="729" height="1096" maximized="true" key="dock-window-1/0.0.1920.1170/-1280.77.1280.994@0.0.1920.1170" timestamp="1600720943879" />
-    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603131135177" />
+    <state x="-1555" y="222" width="1094" height="1220" maximized="true" key="dock-window-1/0.0.1920.1170/-1680.142.1680.1020@0.0.1920.1170" timestamp="1603193818246" />
     <state x="895" y="451" key="extract.method.dialog" timestamp="1602359970828">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
