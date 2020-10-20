@@ -1,0 +1,35 @@
+[
+  {
+    "firstName": "Conrad",
+    "lastName": "Auer",
+    "streetAddress": "6845 Larry Mount",
+    "homePhoneNumber": "4182016",
+    "mobilePhoneNumber": "20750812324",
+    "workPhoneNumber": "5824281",
+    "email": "dane.heathcote@yahoo.com",
+    "email2": "salina.shanahan@hotmail.com",
+    "email3": "michel.jacobson@yahoo.com"
+  },
+  {
+    "firstName": "Alvera",
+    "lastName": "Ferry",
+    "streetAddress": "0363 Harry Walks",
+    "homePhoneNumber": "4280257",
+    "mobilePhoneNumber": "02369785357",
+    "workPhoneNumber": "3722820",
+    "email": "lakendra.adams@gmail.com",
+    "email2": "terese.franecki@hotmail.com",
+    "email3": "evan.gutmann@hotmail.com"
+  },
+  {
+    "firstName": "Merrie",
+    "lastName": "Pacocha",
+    "streetAddress": "1306 Chris Well",
+    "homePhoneNumber": "3827771",
+    "mobilePhoneNumber": "43528433764",
+    "workPhoneNumber": "9446620",
+    "email": "brent.kertzmann@hotmail.com",
+    "email2": "melvin.parisian@hotmail.com",
+    "email3": "cherry.mann@gmail.com"
+  }
+]
