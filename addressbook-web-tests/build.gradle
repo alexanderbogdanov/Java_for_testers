@@ -21,6 +21,8 @@ dependencies {
     implementation 'com.thoughtworks.xstream:xstream:1.4.13'
     implementation 'com.centurylink.mdw.assets:gson:6.1.38'
     implementation 'ch.qos.logback:logback-classic:1.3.0-alpha5'
+    implementation 'mysql:mysql-connector-java:8.0.22'
+    implementation 'org.hibernate:hibernate-core:5.4.22.Final'
 }
 
 task testGroups(type: Test){
